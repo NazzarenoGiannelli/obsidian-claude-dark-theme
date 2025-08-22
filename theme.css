@@ -1,0 +1,363 @@
+/* Claude Dark Theme for Obsidian */
+
+:root {
+  /* Claude-inspired Color Palette */
+  --claude-primary-r: 218;
+  --claude-primary-g: 119;
+  --claude-primary-b: 86;
+  --claude-primary: rgb(
+    var(--claude-primary-r),
+    var(--claude-primary-g),
+    var(--claude-primary-b)
+  );
+  --claude-primary-hover: #bd5d3a;
+  --claude-accent: #ff9966;
+
+  /* Background Colors */
+  --claude-bg-dark: #262624;
+  --claude-bg-secondary: #262624;
+  --claude-bg-sidebar: #30302e;
+  --claude-bg-tertiary: #333333;
+  --claude-border: #3d3d3d;
+
+  /* Text Colors */
+  --claude-text-primary: #f0f0f0;
+  --claude-text-secondary: #cccccc;
+  --claude-text-muted: #999999;
+
+  /* Interactive Colors */
+  --claude-hover: rgba(218, 119, 86, 0.1);
+  --claude-selection: rgba(218, 119, 86, 0.2);
+}
+
+.theme-dark {
+  /* Primary Background Colors */
+  --background-primary: var(--claude-bg-dark);
+  --background-primary-alt: var(--claude-bg-dark);
+  --background-secondary: var(--claude-bg-secondary);
+  --background-secondary-alt: var(--claude-bg-secondary);
+  --background-accent: var(--claude-bg-tertiary);
+
+  /* Modifier Colors */
+  --background-modifier-border: var(--claude-border);
+  --background-modifier-border-hover: var(--claude-primary);
+  --background-modifier-border-focus: var(--claude-primary);
+  --background-modifier-form-field: var(--claude-bg-tertiary);
+  --background-modifier-form-field-highlighted: var(--claude-bg-secondary);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #4a5d23;
+  --background-modifier-error: #5d2323;
+  --background-modifier-error-rgb: 93, 35, 35;
+  --background-modifier-error-hover: #6d2d2d;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+  /* Text Colors */
+  --text-normal: var(--claude-text-primary);
+  --text-muted: var(--claude-text-muted);
+  --text-faint: var(--claude-text-secondary);
+  --text-error: #ff6b6b;
+  --text-error-hover: #ff5252;
+  --text-accent: var(--claude-primary);
+  --text-accent-hover: var(--claude-primary-hover);
+  --text-selection: var(--claude-selection);
+  --text-highlight-bg: var(--claude-selection);
+  --text-highlight-bg-active: rgba(218, 119, 86, 0.3);
+
+  /* Interactive Colors */
+  --interactive-normal: var(--claude-bg-tertiary);
+  --interactive-hover: var(--claude-hover);
+  --interactive-accent: var(--claude-primary);
+  --interactive-accent-hover: var(--claude-primary-hover);
+  --interactive-accent-rgb: var(--claude-primary-r), var(--claude-primary-g),
+    var(--claude-primary-b);
+  --interactive-success: #5d7c47;
+  
+  /* App Accent Color */
+  --accent-h: 19;
+  --accent-s: 58%;
+  --accent-l: 59%;
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: var(--claude-primary);
+  --scrollbar-bg: var(--claude-bg-secondary);
+  --scrollbar-thumb-bg: var(--claude-bg-tertiary);
+
+  /* Tabs */
+  --tab-text-color: var(--claude-text-secondary);
+  --tab-text-color-focused: var(--claude-text-primary);
+  --tab-text-color-focused-active: var(--claude-primary);
+  --tab-text-color-focused-active-current: var(--claude-primary);
+  --tab-container-background: var(--claude-bg-secondary);
+  --tab-divider-color: #4a4a4a;
+  --tab-outline-color: #4a4a4a;
+
+  /* Icons */
+  --icon-color: var(--claude-text-muted);
+  --icon-color-hover: var(--claude-text-primary);
+  --icon-color-active: var(--claude-primary);
+  --icon-color-focused: var(--claude-primary);
+
+  /* Checkbox */
+  --checkbox-color: var(--claude-primary);
+  --checkbox-color-hover: var(--claude-primary-hover);
+  --checkbox-border-color: var(--claude-border);
+  --checkbox-border-color-hover: var(--claude-primary);
+
+  /* Toggle */
+  --toggle-thumb-color: white;
+  --toggle-border-color: var(--claude-border);
+  --toggle-border-color-hover: var(--claude-primary);
+
+  /* Slider */
+  --slider-track-background: var(--claude-bg-tertiary);
+  --slider-thumb-border-color: var(--claude-primary);
+  --slider-thumb-border-color-hover: var(--claude-primary-hover);
+
+  /* Progress Bar */
+  --progress-bar-background: var(--claude-bg-tertiary);
+  --progress-bar-fill: var(--claude-primary);
+
+  /* Search */
+  --search-result-background: var(--claude-hover);
+  --search-clear-button-color: var(--claude-text-muted);
+  --search-clear-button-color-hover: var(--claude-text-primary);
+  --search-icon-color: var(--claude-text-muted);
+
+  /* Code */
+  --code-background: var(--claude-bg-tertiary);
+  --code-normal: var(--claude-accent);
+  --code-comment: var(--claude-text-muted);
+  --code-function: var(--claude-primary);
+  --code-important: var(--claude-accent);
+  --code-keyword: var(--claude-primary);
+  --code-operator: var(--claude-text-primary);
+  --code-property: var(--claude-accent);
+  --code-punctuation: var(--claude-text-secondary);
+  --code-string: #90c695;
+  --code-tag: var(--claude-primary);
+  --code-value: var(--claude-accent);
+
+  /* Links */
+  --link-color: var(--claude-primary);
+  --link-color-hover: var(--claude-primary-hover);
+  --link-external-color: var(--claude-accent);
+  --link-external-color-hover: #ffaa77;
+  --link-unresolved-color: var(--claude-text-muted);
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: var(--claude-primary);
+  --tag-background: var(--claude-hover);
+  --tag-background-hover: var(--claude-selection);
+
+  /* Graph */
+  --graph-line: var(--claude-border);
+  --graph-node: var(--claude-primary);
+  --graph-node-unresolved: var(--claude-text-muted);
+  --graph-node-focused: var(--claude-primary-hover);
+  --graph-node-tag: var(--claude-accent);
+  --graph-node-attachment: #90c695;
+
+  /* Calendar */
+  --calendar-hover: var(--claude-hover);
+  --calendar-background-hover: var(--claude-hover);
+  --calendar-border: var(--claude-border);
+
+  /* Kanban */
+  --kanban-lane-background: var(--claude-bg-secondary);
+  --kanban-lane-border: var(--claude-border);
+  --kanban-card-background: var(--claude-bg-tertiary);
+  --kanban-card-border: var(--claude-border);
+}
+
+/* Headers */
+.markdown-preview-view h1,
+.HyperMD-header-1 {
+  color: var(--claude-primary);
+  font-weight: 600;
+}
+
+.markdown-preview-view h2,
+.HyperMD-header-2 {
+  color: var(--claude-accent);
+  font-weight: 600;
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header-3,
+.HyperMD-header-4,
+.HyperMD-header-5,
+.HyperMD-header-6 {
+  color: var(--text-normal);
+  font-weight: 500;
+}
+
+/* Links */
+.markdown-preview-view a,
+.cm-link,
+.cm-url {
+  color: var(--link-color);
+}
+
+.markdown-preview-view a:hover,
+.cm-link:hover,
+.cm-url:hover {
+  color: var(--link-color-hover);
+}
+
+/* Code */
+.markdown-preview-view code,
+.cm-inline-code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.markdown-preview-view pre,
+.cm-editor .cm-scroller {
+  background-color: var(--background-secondary);
+}
+
+.markdown-preview-view pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Blockquotes */
+.markdown-preview-view blockquote,
+.cm-quote {
+  border-left: 1px solid var(--claude-primary);
+  background-color: var(--claude-hover);
+  color: var(--text-muted);
+  padding-left: 12px;
+}
+
+/* Tables */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  background-color: var(--background-secondary);
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 8px 12px;
+}
+
+.markdown-preview-view th {
+  background-color: var(--background-accent);
+  color: var(--claude-primary);
+  font-weight: 600;
+}
+
+/* Tags */
+.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-color);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+}
+
+/* Navigation */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--background-primary);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: var(--interactive-hover);
+}
+
+/* Search results */
+.search-result-file-title {
+  color: var(--interactive-accent);
+}
+
+.search-result-file-match {
+  background-color: var(--text-highlight-bg);
+}
+
+/* Buttons */
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--background-primary);
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* Settings modal */
+.modal {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.setting-item {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* Transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Focus states */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+/* Sidebar specific styling */
+.workspace-split.mod-left-split .workspace-leaf,
+.workspace-split.mod-right-split .workspace-leaf {
+  background-color: var(--claude-bg-sidebar);
+}
+
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content {
+  background-color: var(--claude-bg-sidebar);
+}
+
+.workspace-split.mod-left-split .nav-folder,
+.workspace-split.mod-right-split .nav-folder,
+.workspace-split.mod-left-split .nav-file,
+.workspace-split.mod-right-split .nav-file {
+  background-color: var(--claude-bg-sidebar);
+}
