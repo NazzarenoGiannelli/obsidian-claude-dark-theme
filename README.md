@@ -22,7 +22,7 @@ A dark theme for Obsidian inspired by Claude Desktop's warm, earthy design aesth
 
 ### Method 1: Manual Installation
 
-1. Download the latest release from [Releases](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/releases)
+1. Download the zip of this repo
 2. Extract the files to your Obsidian vault's `.obsidian/themes/` directory
 3. The final path should look like: `YourVault/.obsidian/themes/claude-dark/`
 4. Open Obsidian Settings → Appearance → Themes
@@ -47,17 +47,6 @@ Then activate the theme in Obsidian Settings → Appearance → Themes.
 - **Text Primary**: `#f0f0f0` (high contrast white)
 - **Text Secondary**: `#cccccc` (medium gray for secondary text)
 - **Text Muted**: `#999999` (light gray for less important text)
-
-## Screenshots
-
-### Main Interface
-![Main Interface](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/main/screenshots/main-interface.png)
-
-### Code Blocks
-![Code Blocks](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/main/screenshots/code-blocks.png)
-
-### Settings Panel
-![Settings](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/main/screenshots/settings.png)
 
 ## Compatibility
 
@@ -86,6 +75,7 @@ Inspired by [Claude Desktop](https://claude.ai) by Anthropic.
 ## Changelog
 
 ### v1.0.0
+
 - Initial release
 - Claude-inspired color palette
 - Complete Obsidian UI coverage
