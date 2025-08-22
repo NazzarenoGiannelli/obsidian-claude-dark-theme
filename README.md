@@ -2,7 +2,7 @@
 
 A dark theme for Obsidian inspired by Claude Desktop's warm, earthy design aesthetic.
 
-![Claude Dark Theme Preview](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/main/preview.png)
+![Claude Dark Theme Preview](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/master/preview.png)
 
 ## Features
 
