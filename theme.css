@@ -1,4 +1,4 @@
-/* Claude Dark Theme for Obsidian */
+/* Terracotta Dark Theme for Obsidian */
 
 :root {
   /* Claude-inspired Color Palette */
@@ -71,7 +71,7 @@
   --interactive-accent-rgb: var(--claude-primary-r), var(--claude-primary-g),
     var(--claude-primary-b);
   --interactive-success: #5d7c47;
-  
+
   /* App Accent Color */
   --accent-h: 19;
   --accent-s: 58%;

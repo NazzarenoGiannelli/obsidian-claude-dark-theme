@@ -1,15 +1,13 @@
-# Claude Dark Theme for Obsidian
+# Terracotta Dark Theme for Obsidian
 
 A dark theme for Obsidian inspired by Claude Desktop's warm, earthy design aesthetic.
 
-![Claude Dark Theme Preview](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/master/preview.png)
+![Terracotta Dark Theme Preview](https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme/blob/master/preview.png)
 
 ## Features
 
-- **Authentic Claude Colors**: Uses Claude's signature orange (`#da7756`) for accents and interactive elements
-- **Refined Gray Palette**: Main content area uses `#262624` with lighter sidebar panels (`#30302e`) for visual distinction
-- **Subtle Borders**: Clean 1px borders throughout for a modern, minimalist appearance
 - **Warm Orange Accents**: Headers, links, and interactive elements use Claude's signature color scheme
+- **Subtle Borders**: Clean 1px borders throughout for a modern, minimalist appearance
 - **Comprehensive Coverage**: Supports all Obsidian UI elements including:
   - Headers and typography
   - Code blocks and syntax highlighting
@@ -32,21 +30,10 @@ A dark theme for Obsidian inspired by Claude Desktop's warm, earthy design aesth
 
 ```bash
 cd /path/to/your/vault/.obsidian/themes/
-git clone https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme.git claude-dark
+git clone https://github.com/NazzarenoGiannelli/obsidian-claude-dark-theme.git terracotta-dark
 ```
 
 Then activate the theme in Obsidian Settings → Appearance → Themes.
-
-## Color Palette
-
-- **Primary Accent**: `#da7756` (Claude's signature orange)
-- **Primary Hover**: `#bd5d3a` (darker orange for hover states)
-- **Secondary Accent**: `#ff9966` (lighter orange for code and highlights)
-- **Main Background**: `#262624` (Claude Code's exact background)
-- **Sidebar Background**: `#30302e` (lighter gray for panels)
-- **Text Primary**: `#f0f0f0` (high contrast white)
-- **Text Secondary**: `#cccccc` (medium gray for secondary text)
-- **Text Muted**: `#999999` (light gray for less important text)
 
 ## Compatibility
 
@@ -67,8 +54,6 @@ MIT License - feel free to modify and distribute.
 ## Credits
 
 Created by [Nazzareno Giannelli](https://github.com/NazzarenoGiannelli)
-
-Inspired by [Claude Desktop](https://claude.ai) by Anthropic.
 
 ---
 
